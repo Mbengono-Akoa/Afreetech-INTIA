@@ -17,9 +17,9 @@ Assurez-vous d’avoir installé sur votre PC :
 
 # Structure du Projet
 Intia/
-├── Intia-Backend
-├── Intia-Frontend
-└── DOC-INTIA
+  /Intia-Backend
+  /Intia-Frontend
+  /DOC-INTIA
 
 -------------------------------------------------------------------------------------------------------------
 
