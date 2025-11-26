@@ -17,10 +17,16 @@ export const login = (data) => api.post("/auth/login", data);
 export const register = (data) => api.post("/auth/register", data);
 export const logout = () => api.post("/auth/logout");
 
-// Products
-export const fetchProducts = () => api.get("/products/getAll");
-export const createProduct = (data) => api.post("/products/create", data);
-export const updateProduct = (id, data) => api.put(`/products/update/${id}`, data);
-export const deleteProduct = (id) => api.delete(`/products/delete/${id}`);
+// Clients
+export const fetchClients = () => api.get("/clients");
+export const createClient = (data) => api.post("/clients", data);
+export const updateClient = (id, data) => api.put(`/clients/${id}`, data);
+export const deleteClient = (id) => api.delete(`/clients/${id}`);
+
+// Insurances
+export const fetchInsurances = () => api.get("/insurances");
+export const createInsurance = (data) => api.post("/insurances", data);
+export const updateInsurance = (id, data) => api.put(`/insurances/${id}`, data);
+export const deleteInsurance = (id) => api.delete(`/insurances/${id}`);
 
 export default api;

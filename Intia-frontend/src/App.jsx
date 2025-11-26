@@ -3,8 +3,10 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
-import Products from "./pages/Products";
+import Clients from "./pages/Clients";
+import Insurances from "./pages/Insurances";
 import ProtectedRoute from "./ProtectedRoute";
+import Layout from "../src/components/Layout";
 import { setAuthToken } from "./api/api";
 
 export default function App() {
@@ -24,16 +26,29 @@ export default function App() {
         path="/"
         element={
           <ProtectedRoute token={token}>
-            <Dashboard />
+            <Layout>
+              <Dashboard />
+            </Layout>
           </ProtectedRoute>
         }
       />
-
       <Route
-        path="/products"
+        path="/clients"
         element={
           <ProtectedRoute token={token}>
-            <Products />
+            <Layout>
+              <Clients />
+            </Layout>
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/insurances"
+        element={
+          <ProtectedRoute token={token}>
+            <Layout>
+              <Insurances />
+            </Layout>
           </ProtectedRoute>
         }
       />

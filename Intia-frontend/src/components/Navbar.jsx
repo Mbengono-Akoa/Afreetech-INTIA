@@ -14,7 +14,7 @@ export default function Navbar() {
     <div className="w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white h-screen fixed top-0 left-0 flex flex-col shadow-lg">
       {/* Logo / App Name */}
       <div className="p-6 border-b border-gray-700">
-        <h1 className="text-2xl font-extrabold tracking-wide">Inventory App</h1>
+        <h1 className="text-2xl font-extrabold tracking-wide">Intia</h1>
       </div>
 
       {/* Navigation Links */}
@@ -27,10 +27,17 @@ export default function Navbar() {
         </Link>
 
         <Link
-          to="/products"
+          to="/clients"
           className="block py-3 px-4 rounded-lg hover:bg-gray-700 transition flex items-center font-medium"
         >
-          Products
+          Clients
+        </Link>
+
+        <Link
+          to="/insurances"
+          className="block py-3 px-4 rounded-lg hover:bg-gray-700 transition flex items-center font-medium"
+        >
+          Insurances
         </Link>
       </nav>
 
