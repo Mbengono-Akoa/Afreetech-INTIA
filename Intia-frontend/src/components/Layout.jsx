@@ -3,9 +3,11 @@ import Sidebar from "./Navbar";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex">
+    <div className="flex min-h-screen">
       <Sidebar />
-      <div className="ml-64 p-6 w-full">{children}</div>
+      <main className="ml-64 p-6 w-full bg-gray-50 min-h-screen">
+        {children}
+      </main>
     </div>
   );
 }

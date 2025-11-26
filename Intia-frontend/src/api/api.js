@@ -29,4 +29,13 @@ export const createInsurance = (data) => api.post("/insurances", data);
 export const updateInsurance = (id, data) => api.put(`/insurances/${id}`, data);
 export const deleteInsurance = (id) => api.delete(`/insurances/${id}`);
 
+// Users
+export const fetchUsers = () => api.get("/users");
+export const createUser = (data) => api.post("/users", data);
+export const updateUser = (id, data) => api.put(`/users/${id}`, data);
+export const deleteUser = (id) => api.delete(`/users/${id}`);
+
+// Dashboard Stats
+export const fetchDashboardStats = () => api.get("/dashboard/stats");
+
 export default api;

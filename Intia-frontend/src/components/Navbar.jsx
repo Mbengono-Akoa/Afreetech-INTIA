@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white h-screen fixed top-0 left-0 flex flex-col shadow-lg">
+    <div className="w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white h-screen fixed top-0 left-0 flex flex-col shadow-lg z-50">
       {/* Logo / App Name */}
       <div className="p-6 border-b border-gray-700">
         <h1 className="text-2xl font-extrabold tracking-wide">Intia</h1>
